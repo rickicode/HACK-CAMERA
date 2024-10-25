@@ -122,10 +122,10 @@ replacer() {
     echo -e "${success}Link 1 : ${1}\n"
     sleep 1
     netcheck
-    masked=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${1})
-    if ! [[ -z $masked ]]; then
-        echo -e "${success}URL 2 > ${masked}\n"
-    fi
+    #masked=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${1})
+    #if ! [[ -z $masked ]]; then
+      #  echo -e "${success}URL 2 > ${masked}\n"
+    #fi
 }
 
 # Prevent ^C
